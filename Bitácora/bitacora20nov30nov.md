@@ -1,6 +1,6 @@
-#Bitácora Semanal – Semana del 20 al 30 de noviembre
+# Bitácora Semanal – Semana del 20 al 30 de noviembre
 
-##Detección del Fallo en el Conector Giratorio
+## Detección del Fallo en el Conector Giratorio
 
 Al comenzar las pruebas se observó que el sistema dejaba de mostrar correctamente algunos LEDs.
 Primero se pensó que el error era ruido metido por los cables, por lo que soldamos a una placa asi dejamos de usar esos cables, pero aun seguía sin andar.
@@ -12,7 +12,7 @@ Vcc, GND, Latch, Clock, Data
 
 Con esta reconfiguración fue posible continuar operando la matriz de LEDs, aunque ahora limitada a 8 LEDs útiles.
 
-##Ajustes de Código y Visualización de la Hora
+## Ajustes de Código y Visualización de la Hora
 
 Tras modificar las conexiones físicas, fue necesario adaptar el código para manejar únicamente los 8 LEDs disponibles.
 Se actualizaron los patrones para mostrar correctamente la hora completa con minutos y segundos (HH:MM:SS).
@@ -23,14 +23,14 @@ Al ingresar manualmente la hora, el sistema ajusta sus valores internos y actual
 
 En el drive se puede ver el video del holograma funcionando, y una imagen de la pagina levantada por el access point: https://drive.google.com/drive/folders/1sZ_75MWhc0w5avFAjfK5a24StMbPqEwb?usp=sharing
 
-##Problemas con la Velocidad del Motor
+## Problemas con la Velocidad del Motor
 
 Durante las pruebas prolongadas surgió un problema adicional:
 el motor comenzaba girando bien, pero tras unos segundos su velocidad disminuía progresivamente hasta detenerse.
 
 Se analizaron las conexiones y se detectó que la causa era una soldadura defectuosa en los cables del motor, lo que provocaba variaciones intermitentes en la alimentación.
 
-##Próximos Pasos
+## Próximos Pasos
 
 El siguiente paso será resoldar correctamente los cables del motor, asegurando una unión firme y sin falsos contactos.
 Una vez realizada esta reparación, el sistema debería mantener una velocidad estable para permitir el funcionamiento continuo del reloj.
